@@ -3,10 +3,6 @@
 
 ## Writeup
 
-### You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
-
----
-
 **Build a Traffic Sign Recognition Project**
 
 The goals / steps of this project are the following:
@@ -29,57 +25,36 @@ The goals / steps of this project are the following:
 [image7]: ./examples/placeholder.png "Traffic Sign 4"
 [image8]: ./examples/placeholder.png "Traffic Sign 5"
 
-## Rubric Points
-### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
+The project is not very complicated in terms of explaining the source coded
+and here is a link to my [project notebook](https://github.com/lexandree/udacity-autonomous-car/blob/master/project3/Traffic_Sign_Classifier.ipynb)
 
----
-### Writeup / README
+The python notebook is created in the Google Colab and needs only two optional changes to execute:
+ 1. You need two Telegram parameters for your bot **bot_id** and **chat_id** in the function **to_telegram** where you will receive diagnostics of the training process (optional)
+ 2. In the Step 3 you can upload your images 32x32x3 for verification (optional)
 
-#### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code.
 
-You're reading it! and here is a link to my [project code](https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
+#### Step 0: Load The Data
+Project files are downloaded to a virtual machine and unpacked, pickled data are extracted.
 
-### Data Set Summary & Exploration
-
-#### 1. Provide a basic summary of the data set. In the code, the analysis should be done using python, numpy and/or pandas methods rather than hardcoding results manually.
-
-I used the pandas library to calculate summary statistics of the traffic
+#### Step 1: Dataset Summary & Exploration
+I used the numpy library to calculate summary statistics of the traffic
 signs data set:
 
-* The size of training set is ?
-* The size of the validation set is ?
-* The size of test set is ?
-* The shape of a traffic sign image is ?
-* The number of unique classes/labels in the data set is ?
+* The size of training set is 34799
+* The size of the validation set is 4410
+* The size of test set is 12630
+* The shape of a traffic sign image is 32x32x3
+* The number of unique classes/labels in the data set is 43
+Classes are skewed distributed. In the train dataset is it from 180 till 2010. Exact quantities are shown in three pandas DataFrames. The table with the sign names from **signnames.csv** is followed.
 
-#### 2. Include an exploratory visualization of the dataset.
+As next you can see three tables with sign images. First, it's a continuous sample of 100 images. The second one is a sample of masked images, and the last one is a table of every class images.
 
-Here is an exploratory visualization of the data set. It is a bar chart showing how the data ...
+#### Step 2: Design and Test a Model Architecture
 
-![alt text][image1]
-
-### Design and Test a Model Architecture
-
-#### 1. Describe how you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, and provide example images of the additional data. Then describe the characteristics of the augmented training set like number of images in the set, number of images for each class, etc.)
-
-As a first step, I decided to convert the images to grayscale because ...
-
-Here is an example of a traffic sign image before and after grayscaling.
-
-![alt text][image2]
-
-As a last step, I normalized the image data because ...
-
-I decided to generate additional data because ... 
-
-To add more data to the the data set, I used the following techniques because ... 
-
-Here is an example of an original image and an augmented image:
-
-![alt text][image3]
-
-The difference between the original data set and the augmented data set is the following ... 
-
+ 1. As a first step, I decided **not** to convert the images to grayscale because of colorless signs and input formats of pre-trained networks.
+ 2. The categorical labels are one hot encoded.
+ 3. The data scaling and augmentation processed due the tensorflow **ImageDataGenerator** class. It looks like the recommendation to scale the data to the [-1 1] range comes from tanh activation. With relu activation, I have better results with a range of [0 1]. I have trained NN with the shift range from 0.1 to 0.3 and the middle 0.2 is the best chioce. The samplewise_std_normalization option gives a slight increase in accuracy. Some image classes are slightly rotated and this determines the choice of a large rotation_range value. For large datasets it makes sense to save augmented images to the disk, but when all the data in memory 'on the fly' works faster.
+ 
 
 #### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
