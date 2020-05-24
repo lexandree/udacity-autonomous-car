@@ -53,4 +53,4 @@ All of these networks can have the same accuracy and require hyperparameter tuni
 
 #### Step 3: Test a Model on New Images
 
-I checked the recognition accuracy on 7 images, two of which were not included in the dataset. logits of an unrecognized image number 5 indicate that further configuration is necessary
+I checked the recognition accuracy on 7 images, two of which were not included in the dataset. logits of an unrecognized image number 5 indicate that further configuration is necessary.
