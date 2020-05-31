@@ -13,6 +13,7 @@ The goals / steps of this project are the following:
 
 My project includes the following files:
 * model.py containing the script to create and train the model
+* model.png Model Architecture
 * drive.py for driving the car in autonomous mode
 * model.h5 containing a trained convolution neural network 
 * track1.mp4 video recording of vehicle driving autonomously 
@@ -50,3 +51,6 @@ The model used an adam optimizer, so the learning rate was not tuned manually.
 The more advanced models tested in the colab enviroment. Some keywords of these experiments are: ImageDataGenerator, flow_from_dataframe, multi_output mode, subclassing, Telegram callback, EfficientNetB7, s. Behavioral_Cloning_v1.ipynb. 
 
 But it is overkill for the passage of track 1. Further reduction in the number of trained parameters, reduction of blocks is possible. adding some images from track 2 leads to instability on track 1 but does not improve the first turn of track 2.
+
+**Model Architecture**
+![](https://github.com/lexandree/udacity-autonomous-car/blob/master/project4/model.png)
