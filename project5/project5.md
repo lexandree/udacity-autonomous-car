@@ -44,7 +44,10 @@ Here is the main protocol that main.cpp uses for uWebSocketIO in communicating w
 ["rmse_vy"]
 
 ---
-[Track 1 RMSE](https://github.com/lexandree/udacity-autonomous-car/blob/master/project5/RMSE1.PNG){:height="100px" width="75px"}
+Track 1 RMSE
+
+![](https://github.com/lexandree/udacity-autonomous-car/blob/master/project5/RMSE1.PNG){:height="100px" width="75px"}
+
 ## Other Important Dependencies
 
 * cmake >= 3.5
