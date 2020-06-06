@@ -7,3 +7,5 @@
 [Project 3 Build a Traffic Sign Recognition Classifier](https://github.com/lexandree/udacity-autonomous-car/blob/master/project3/project3.md)
 
 [Project 4 Behavioral-Cloning](https://github.com/lexandree/udacity-autonomous-car/blob/master/project4/project4.md)
+
+[Project 5 Extended Kalman Filters](https://github.com/lexandree/udacity-autonomous-car/blob/master/project5/project5.md)
