@@ -44,7 +44,7 @@ Here is the main protocol that main.cpp uses for uWebSocketIO in communicating w
 ["rmse_vy"]
 
 ---
-
+[Track 1 RMSE](RMSE1.png){:height="100px" width="75px"}
 ## Other Important Dependencies
 
 * cmake >= 3.5
