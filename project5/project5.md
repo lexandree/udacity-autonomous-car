@@ -1,6 +1,6 @@
 # Extended Kalman Filter Project
 
-This project consists of implementing an [Extended Kalman Filter](https://en.wikipedia.org/wiki/Extended_Kalman_filter) with C++. A Term 2 simulator provided by Udacity ([it could be downloaded here](https://github.com/udacity/self-driving-car-sim/releases)) generates noisy RADAR and LIDAR measurements of the position and velocity of an object, and the Extended Kalman Filter (EKF) must fusion those measurements to predict the position of the object. The communication between the simulator and the EKF is done using the [WebSocket](https://en.wikipedia.org/wiki/WebSocket) [implementation](https://github.com/uNetworking/uWebSockets).
+This project implements an [Extended Kalman Filter](https://en.wikipedia.org/wiki/Extended_Kalman_filter) with C++. A Term 2 simulator provided by Udacity ([it could be downloaded here](https://github.com/udacity/self-driving-car-sim/releases)) generates noisy RADAR and LIDAR measurements of the position and velocity of an object, and the Extended Kalman Filter (EKF) must fusion those measurements to predict the position of the object. The communication between the simulator and the EKF is done using the [WebSocket](https://en.wikipedia.org/wiki/WebSocket) [implementation](https://github.com/uNetworking/uWebSockets).
 The starter code is provided by Udacity and all instructions could be found here https://github.com/udacity/CarND-Extended-Kalman-Filter-Project.
 
 I have used Udacity workspace and here the results for both test tracks:
