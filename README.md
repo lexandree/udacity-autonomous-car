@@ -10,4 +10,4 @@
 
 [Project 5 Extended Kalman Filters](https://github.com/lexandree/udacity-autonomous-car/blob/master/project5/project5.md)
 
-[Project 6 Particle Filter ](https://github.com/lexandree/udacity-autonomous-car/blob/master/project5/project6.md)
+[Project 6 Particle Filter ](https://github.com/lexandree/udacity-autonomous-car/blob/master/project6/project6.md)
