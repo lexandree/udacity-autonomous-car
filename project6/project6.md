@@ -21,5 +21,10 @@ The Particle Filter is implemented in [src/particle_filter.cpp](./src/particle_f
 One great explanations with code can be found [here](https://github.com/rlabbe/Kalman-and-Bayesian-Filters-in-Python).
 The big difference is the update step. Without association between observations and landmarks the weights become too small values.
 
+The implementation has been expanded using the following procedures:
+- transform observations to the MAP'S coordinate system with rotation and translation [ParticleFilter::rotate_translate](./src/particle_filter.cpp#L197)
+- normal probability density function for 2D distribution [normal_pdf](./src/helper_functions.h#L64)
+
 This implementation gives satisfactory result with particle number 50 but is not optimized.
-[](./success.PNG)
+
+![](./success.PNG)
