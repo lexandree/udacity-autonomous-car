@@ -33,6 +33,7 @@ The behavior planner is responsible to generate the path and the speed to be fol
 ![txt][image1]
 
 FSM is the "Behavior" part on the diagram and is implemented in [BehaviorLayer class](src/behavior_layer.cpp). For each possible transition, a trajectory will be generated and the cost estimated. 
+
 ![txt][image2]
 
 The method [generate_trajectory](src/behavior_layer.cpp#L118-L134) calls the corresponding methods of the ego_car object to generate the trajectory for the possible state, which is then evaluated.
