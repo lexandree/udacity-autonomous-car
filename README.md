@@ -14,3 +14,5 @@
 
 [Project 7 Path-Planning ](https://github.com/lexandree/udacity-autonomous-car/blob/master/project7/project7.md)
 
+[Project 8 PID-Control](https://github.com/lexandree/udacity-autonomous-car/blob/master/project8/project8.md)
+
