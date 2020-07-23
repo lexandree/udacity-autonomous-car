@@ -19,7 +19,7 @@ I have installed the environment under Udacity Ubuntu Virtual Box with default p
 4. Run it: `./pid`.
 
 ## [PID Controller](https://en.wikipedia.org/wiki/PID_controller)
-"A proportional–integral–derivative controller (PID controller or three-term controller) is a control loop mechanism employing feedback that is widely used in industrial control systems and a variety of other applications requiring continuously modulated control. A PID controller continuously calculates an error value e(t)as the difference between a desired setpoint (SP) and a measured process variable (PV) and applies a correction based on proportional, integral, and derivative terms (denoted P, I, and D respectively), hence the name."
+"A proportional–integral–derivative controller (PID controller or three-term controller) is a control loop mechanism employing feedback that is widely used in industrial control systems and a variety of other applications requiring continuously modulated control. A PID controller continuously calculates an error value e(t)as the difference between a desired setpoint (SP) and a measured process variable (PV) and applies a correction based on proportional, integral, and derivative terms (denoted P, I, and D respectively), hence the name." [[1](https://en.wikipedia.org/wiki/PID_controller)]
 
 ![txt][image1]
 
@@ -46,7 +46,7 @@ double PID::TotalError() {
 ## Parameter Tuning
 
 Trying to tweak the parameters on my virtual machine showed too big delays. The values close to the optimal allowed the car to pass the track a few times, but the oszillations were not comfortable.  
-Probably the twiddle algorithm can find the optimal settings, but in conditions of uneven time delays and different response times, it will be necessary to introduce the time parameter delta t.  
+Probably the twiddle algorithm can find the optimal settings, but in presence of uneven time delays and different response times, it will be necessary to introduce the time parameter delta t.  
 I used manual setting first:  
 ![txt][image2]
 
@@ -63,6 +63,6 @@ They also have difficulties in the presence of non-linearities, may trade-off re
 
 [//]: # (Image References)
 
-[image1]: img/PID.jpg"
-[image2]: img/PID_settings.PNG"
-[image3]: img/PID_tune.PNG"
+[image1]: img/PID.jpg "PID"
+[image2]: img/PID_settings.PNG "manual tuning"
+[image3]: img/PID_tune.PNG "Ziegler-Nichols method"
