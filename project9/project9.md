@@ -44,8 +44,8 @@ Carla is equipped with a drive-by-wire (dbw) system, meaning the throttle, brake
       rate.sleep()
 ```
 ### Traffic Light Detector (Perception)  
-This package contains the traffic light detection node: tl_detector.py. This node takes in data from the camera, current position and uses loaded base waypoints and publishes the locations to stop for red traffic lights to the /traffic_waypoint topic. The traffic light classifier controls the execution branch of the traffic light detector, and when red or yellow is detected, the position of the stop line will be published.  
-The classifier is implemented as a REST API and can send camera images to any appropriate server that recognizes the desired objects.
+This package contains the traffic light detection node: tl_detector.py. This node takes in data from the camera, current position and uses loaded base waypoints and publishes the locations to stop for red traffic lights to the /traffic_waypoint topic. The traffic light classifier controls the execution flow of the traffic light detector, and when red or yellow is detected, the position of the stop line will be published.  
+The classifier is implemented as a REST API and can send camera images to any appropriate server that recognizes the objects you need.
 ```python
   if self.flip_channels:
       image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
