@@ -11,7 +11,7 @@ I have used Udacity workspace for final run and google colab for YOLO network tr
 
 ## System architecture
 
-![](https://github.com/lexandree/udacity-autonomous-car/blob/master/project9/system_architecture.png)  
+![](system_architecture.png)  
 ### Implemented ROS nodes:  
 ### Waypoint updater (Planning)  
 This package contains the waypoint updater node: waypoint_updater.py. The purpose of this node is to update the target velocity property of each waypoint based on traffic light and obstacle detection data. This node will subscribe to the /base_waypoints, /current_pose, /obstacle_waypoint, and /traffic_waypoint topics, and publish a list of waypoints ahead of the car with target velocities to the /final_waypoints topic. In the first step, the node only publishes the waypoints from the current position to LOOKAHED_WPS=200.
@@ -72,7 +72,7 @@ The server is implemented as a conventional Flask application
 For the classifier neural network I have choosen YOLOv3 darknet network, tensorflow implementation. The YOLO family is a leader in inference speed, which is especially important in real-time systems, has different implementations in size, has auxiliary data processing procedures during training, is implemented on various backbone libraries, is actively developing.  
 One of the best datasets for traffic light detection is the DriveU dataset, but it would be overkill. Comparative analysis shows that the LISA dataset is the best choice.
 The dataset consists of 7 classes. They are unevenly distributed, but the two most important classes for this task **stop** and **go** have an appropriate presence.  
-![](https://github.com/lexandree/udacity-autonomous-car/blob/master/project9/cl_distribution.png)  
+![](cl_distribution.png)  
 Predictions  
 <table>
 <tr>
@@ -95,13 +95,13 @@ go, 0.60, [0.89 0.38 0.92 0.45]
 </pre></td>
   </tr>
   <tr>
-    <td><img src="https://github.com/lexandree/udacity-autonomous-car/blob/master/project9/images/dayClip10--00002.jpg"></td>
-    <td><img src="https://github.com/lexandree/udacity-autonomous-car/blob/master/project9/images/dayClip8--00151.jpg"></td>
+    <td><img src="./images/dayClip10--00002.jpg"></td>
+    <td><img src="./images/dayClip8--00151.jpg"></td>
     <td><img src="./images/daySequence1--02829.jpg"></td>
   </tr>
   <tr>
-    <td><img src="https://github.com/lexandree/udacity-autonomous-car/blob/master/project9/images/detection1.jpg"></td>
-    <td><img src="https://github.com/lexandree/udacity-autonomous-car/blob/master/project9/images/detection2.jpg"></td>
+    <td><img src="./images/detection1.jpg"></td>
+    <td><img src="./images/detection2.jpg"></td>
     <td><img src="./images/detection3.jpg"></td>
   </tr>
  </table>
