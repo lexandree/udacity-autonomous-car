@@ -121,12 +121,12 @@ go, 0.60, [0.89 0.38 0.92 0.45]
   wait for string: * Running on http://0.0.0.0:500/
 6. Install and run the project from the workspace terminal as usually 
   (for new Terminator session you need to exit **base** environment first: **conda deactivate**)  
-  cd /home/workspace/CarND-Capstone  
-  pip install -r requirements.txt  
-  cd ros  
-  catkin_make  
-  source devel/setup.sh  
-  roslaunch launch/styx.launch  
+  ```cd /home/workspace/CarND-Capstone```  
+  ```pip install -r requirements.txt```  
+  ```cd ros```  
+  ```catkin_make```  
+  ```source devel/setup.sh```  
+  ```roslaunch launch/styx.launch```  
 7.  Run the “Capstone Simulator” 
 
 
