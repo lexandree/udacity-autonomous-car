@@ -97,12 +97,12 @@ go, 0.60, [0.89 0.38 0.92 0.45]
   <tr>
     <td><img src="https://github.com/lexandree/udacity-autonomous-car/blob/master/project9/images/dayClip10--00002.jpg"></td>
     <td><img src="https://github.com/lexandree/udacity-autonomous-car/blob/master/project9/images/dayClip8--00151.jpg"></td>
-    <td><img src="https://github.com/lexandree/udacity-autonomous-car/blob/master/project9/images/daySequence1--02829.jpg"></td>
+    <td><img src="./images/daySequence1--02829.jpg"></td>
   </tr>
   <tr>
     <td><img src="https://github.com/lexandree/udacity-autonomous-car/blob/master/project9/images/detection1.jpg"></td>
     <td><img src="https://github.com/lexandree/udacity-autonomous-car/blob/master/project9/images/detection2.jpg"></td>
-    <td><img src="https://github.com/lexandree/udacity-autonomous-car/blob/master/project9/images/detection3.jpg"></td>
+    <td><img src="./images/detection3.jpg"></td>
   </tr>
  </table>
  
@@ -111,13 +111,13 @@ go, 0.60, [0.89 0.38 0.92 0.45]
 
 1. Run the Capstone Project Workspace with GPU
 2. Click "Go To Desktop" and open Terminator in VNC session
-3. cd /home/workspace/Object-Detection-API  
-  /root/miniconda3/condabin/conda update -n base -c defaults conda  
-  /root/miniconda3/condabin/conda env create --file conda-gpu.yml  
-  /root/miniconda3/condabin/conda init bash
+3. ```cd /home/workspace/Object-Detection-API```  
+  ```/root/miniconda3/condabin/conda update -n base -c defaults conda```  
+  ```/root/miniconda3/condabin/conda env create --file conda-gpu.yml```  
+  ```/root/miniconda3/condabin/conda init bash```  
 4. Close and re-open Terminator
-5. cd /home/workspace/Object-Detection-API  
-  python app.py  
+5. ```cd /home/workspace/Object-Detection-API```  
+  ```python app.py```  
   wait for string: * Running on http://0.0.0.0:500/
 6. Install and run the project from the workspace terminal as usually 
   (for new Terminator session you need to exit **base** environment first: **conda deactivate**)  
