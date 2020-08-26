@@ -117,6 +117,7 @@ go, 0.60, [0.89 0.38 0.92 0.45]
   ```/root/miniconda3/condabin/conda init bash```  
 4. Close and re-open Terminator
 5. ```cd /home/workspace/Object-Detection-API```  
+  ```conda activate yolov3-gpu```  
   ```python app.py```  
   wait for string: * Running on http://0.0.0.0:500/
 6. Install and run the project from the workspace terminal as usually 
