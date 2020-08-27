@@ -107,7 +107,7 @@ go, 0.60, [0.89 0.38 0.92 0.45]
  </table>
  
 
-## Build Instructions for the Udacity Project Workspace  
+## Build Instructions for existing Udacity Project Workspace  
 
 1. Run the Capstone Project Workspace with GPU
 2. Click "Go To Desktop" and open Terminator in VNC session
@@ -120,7 +120,7 @@ go, 0.60, [0.89 0.38 0.92 0.45]
   ```conda activate yolov3-gpu```  
   ```python app.py```  
   wait for string: * Running on http://0.0.0.0:500/
-6. Install and run the project from the workspace terminal as usually 
+6. Install and run the ROS project from the workspace terminal as usually 
   (for new Terminator session you need to exit **base** environment first: **conda deactivate**)  
   ```cd /home/workspace/CarND-Capstone```  
   ```pip install -r requirements.txt```  
@@ -129,6 +129,34 @@ go, 0.60, [0.89 0.38 0.92 0.45]
   ```source devel/setup.sh```  
   ```roslaunch launch/styx.launch```  
 7.  Run the “Capstone Simulator” 
+
+
+## Build Instructions for cloned project in a new environment  
+
+The difference is mainly in the path to the project files and conda. Also see the [project page](https://github.com/udacity/CarND-Capstone).  
+1. Install miniconda3 and clone the project  
+2. Open bash  
+3. ```cd <>/udacity-autonomous-car/project9/Object-Detection-API/weights```  
+  ```cat yolov3_c_last.tf.zip.* > yolov3_c_last.tf.zip```  
+  ```unzip yolov3_c_last.tf.zip```  
+  ```cd <>/udacity-autonomous-car/project9/Object-Detection-API```  
+  ```conda update -n base -c defaults conda```  
+  ```conda env create --file conda-gpu.yml```  
+  ```conda init bash```  
+4. Close and re-open bash  
+5. ```cd <>/udacity-autonomous-car/project9/Object-Detection-API```  
+  ```conda activate yolov3-gpu```  
+  ```python app.py```  
+  wait for string: * Running on http://0.0.0.0:500/  
+6. Install and run the ROS project from the new bash session  
+  (exit **base** conda environment first: **conda deactivate**)  
+  ```cd <>/udacity-autonomous-car/project9```  
+  ```pip install -r requirements.txt```  
+  ```cd ros```  
+  ```catkin_make```  
+  ```source devel/setup.sh```  
+  ```roslaunch launch/styx.launch```  
+7.  Run the “Capstone Simulator”  
 
 
 ## Demo  
