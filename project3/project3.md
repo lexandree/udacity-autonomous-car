@@ -53,4 +53,88 @@ All of these networks can have the same accuracy and require hyperparameter tuni
 
 #### Step 3: Test a Model on New Images
 
-I checked the recognition accuracy on 7 images, two of which were not included in the dataset. logits of an unrecognized image number 5 indicate that further configuration is necessary.
+I checked the recognition accuracy on 7 images, two of which (number 3 and 6) were not included in the dataset. Logits of an unrecognized image number 5 indicate that further training/processing is necessary.
+
+Predictions  
+<table>
+<tr>
+<td><pre>
+1)
+14.83  'Children crossing'
+11.09  'Speed limit (20km/h)'
+9.96  'Speed limit (80km/h)'
+6.09  'Bicycles crossing'
+4.62  'Speed limit (50km/h)'
+</pre></td>
+<td><pre>
+2)
+21.12  'Speed limit (20km/h)'
+15.45  'Roundabout mandatory'
+12.78  'Speed limit (30km/h)'
+3.31  'Speed limit (70km/h)'
+2.69  'Speed limit (80km/h)'
+</pre></td>
+<td><pre>
+3)
+9.36  'Keep right'
+8.25  'Keep left'
+5.02  'Priority road'
+4.90  'Ahead only'
+3.81 'General caution'
+</pre></td>
+</tr>
+<tr>
+    <td><img src="schield1.jpg"></td>
+    <td><img src="schield2.jpg"></td>
+    <td><img src="schield3.jpg"></td>
+</tr>
+<tr>
+<td><pre>
+4)
+6.48  'Speed limit (30km/h)'
+4.41  'Speed limit (80km/h)'
+4.19  'Speed limit (20km/h)'
+3.08  'Speed limit (50km/h)'
+1.99  'Speed limit (100km/h)'
+</pre></td>
+<td><pre>
+5)
+14.20 'Right-of-way at the 
+       next intersection'
+14.08  'Beware of ice/snow'
+8.72  'Road work'
+1.68  'Pedestrians'
+1.40  'Ahead only'
+</pre></td>
+<td><pre>
+6)
+5.42  'General caution'
+2.13  'Right-of-way at the 
+       next intersection'
+1.67  'Dangerous curve to the 
+       right'
+1.56  'Pedestrians'
+1.49  'Traffic signals'
+</pre></td>
+  </tr>
+  <tr>
+    <td><img src="schield4.jpg"></td>
+    <td><img src="schield5.jpg"></td>
+    <td><img src="schield6.jpg"></td>
+  </tr>
+<tr>
+<td><pre>
+7)
+4.72  'Slippery road'
+4.66  'Speed limit (80km/h)'
+4.15  'Dangerous curve to the right'
+4.14  'Speed limit (30km/h)'
+2.80  'Speed limit (60km/h)'
+</pre></td>
+  </tr>
+  <tr>
+    <td><img src="schield7.jpg"></td>
+  </tr>
+<tr>
+</table>
+ 
