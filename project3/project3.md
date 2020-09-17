@@ -54,7 +54,7 @@ The following parameters have been selected for training:
 batch_size = 128  
 epochs = 75  
 Adam optimizer automatically sets the learning rate  
-![](train1.PNG)  
+![](train1.png)  
 As you can see, the validation accuracy goes up to epoch 17, and the EarlyStopping callback ends the trainig at epoch 22. The achieved test accuracy of 95% is equal to the validation accuracy.  
 
 #### Step 3: Test a Model on New Images
@@ -148,4 +148,4 @@ One unrecognized image out of five (known classes!) gives an rough estimate of 8
 
 #### CNN Layout  
 
-![](net.PNG)
+![](net.png)
