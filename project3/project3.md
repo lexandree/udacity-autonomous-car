@@ -49,7 +49,13 @@ I have used 3 different models:
  2. Network with two filter size paths 3x3 and 5x5
  3. LeNet-5 like architecture
 
-All of these networks can have the same accuracy and require hyperparameter tuning. During the setup process, I established the need to exclude a poling layer. At low resolution this layer destroys too much information. Thus LeNet-5 is not suitable in this case, three directly connected convolution layers give the best result. The last ConvNN with a simple configuration was selected for further verification.
+All of these networks can have the same accuracy and require hyperparameter tuning. During the setup process, I established the need to exclude a poling layer. At low resolution this layer destroys too much information. Thus LeNet-5 is not suitable in this case, three directly connected convolution layers give the best result. The last ConvNN with a simple configuration was selected for further verification. The complete model layout is at the end of this readme file.  
+The following parameters have been selected for training:  
+batch_size = 128  
+epochs = 75  
+Adam optimizer automatically sets the learning rate  
+![](train1.PNG)  
+As you can see, the validation accuracy goes up to epoch 17, and the EarlyStopping callback ends the trainig at epoch 22. The achieved test accuracy of 95% is equal to the validation accuracy.  
 
 #### Step 3: Test a Model on New Images
 
@@ -136,5 +142,10 @@ Predictions
     <td><img src="schield7.jpg"></td>
   </tr>
 <tr>
-</table>
- 
+</table>  
+
+One unrecognized image out of five (known classes!) gives an rough estimate of 80% accuracy, but it should be noted that I deliberately selected difficult images.
+
+#### CNN Layout  
+
+![](net.PNG)
