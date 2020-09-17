@@ -52,5 +52,11 @@ The more advanced models tested in the colab enviroment. Some keywords of these 
 
 But it is overkill for the passage of track 1. Further reduction in the number of trained parameters, reduction of blocks is possible. adding some images from track 2 leads to instability on track 1 but does not improve the first turn of track 2.
 
+#### 5. Model performance
+Below is the video that demonstrates the performance of the trained model using 
+[Udacity's driving simulator](https://github.com/udacity/self-driving-car-sim).  
+[![LINK TO YOUTUBE](youtube.png)](https://www.youtube.com/watch?v=GRP7gyGeuls)
+
+
 **Model Architecture**
 ![](https://github.com/lexandree/udacity-autonomous-car/blob/master/project4/model.png)
