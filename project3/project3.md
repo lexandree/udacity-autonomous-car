@@ -144,7 +144,9 @@ Predictions
 <tr>
 </table>  
 
-One unrecognized image out of five (known classes!) gives an rough estimate of 80% accuracy, but it should be noted that I deliberately selected difficult images.
+One unrecognized image out of five (known classes!) gives an rough estimate of 80% accuracy, but it should be noted that I deliberately selected difficult images.  
+
+For detailed EDA and training process inclusive confusion matrix see the [ipython file](Traffic_Sign_Classifier.ipynb)
 
 #### CNN Layout  
 
