@@ -55,7 +55,7 @@ But it is overkill for the passage of track 1. Further reduction in the number o
 #### 5. Model performance
 Below is the video that demonstrates the performance of the trained model using 
 [Udacity's driving simulator](https://github.com/udacity/self-driving-car-sim).  
-[![LINK TO YOUTUBE](youtube.png)](https://www.youtube.com/watch?v=GRP7gyGeuls)
+[![LINK TO YOUTUBE](youtube.PNG)](https://www.youtube.com/watch?v=GRP7gyGeuls)
 
 
 **Model Architecture**
