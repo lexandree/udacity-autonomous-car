@@ -161,4 +161,5 @@ The difference is mainly in the path to the project files and conda. Also see th
 
 ## Demo  
 
-![](./images/demo2.PNG)
+[![LINK TO YOUTUBE](./images/demo2.PNG)](https://www.youtube.com/watch?v=MM9BCbTwx3Q)
+
